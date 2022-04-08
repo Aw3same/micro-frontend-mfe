@@ -2,6 +2,7 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 const mf = require("@angular-architects/module-federation/webpack");
 const path = require("path");
 const share = mf.share;
+// import('admin/Module');
 
 const sharedMappings = new mf.SharedMappings();
 sharedMappings.register(path.join(__dirname, "../../tsconfig.json"), [
@@ -12,7 +13,6 @@ module.exports = {
   output: {
     uniqueName: "shell",
     publicPath: "auto",
-    scriptType: 'text/javascript'
   },
   optimization: {
     runtimeChunk: false,

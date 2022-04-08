@@ -12,7 +12,6 @@ module.exports = {
   output: {
     uniqueName: "admin",
     publicPath: "auto",
-    scriptType: 'text/javascript'
   },
   optimization: {
     runtimeChunk: false
